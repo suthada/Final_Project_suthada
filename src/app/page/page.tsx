@@ -221,7 +221,7 @@ const MyComponent = () => {
         {editIndex !== null ? "แก้ไข" : "บันทึก"}
       </button>
 
-      <table className="table">
+      <table className="table" >
         <thead>
           <tr>
             <th scope="col">ลำดับ</th>

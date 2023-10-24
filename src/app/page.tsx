@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import React from 'react';
 
 
 const centerText: React.CSSProperties = {
@@ -14,9 +13,8 @@ const centerText: React.CSSProperties = {
 export default function Home() {
   return (
     <div style={centerText}>
-      <h1>คำนวณภาษี</h1>
-      <h2>กรุณา signin</h2>
-    </div> 
+      <h1>คำนวณภาษีที่ดิน</h1>
+      <h2>กรุณา sign in</h2>
+    </div>
   );
 }
-
