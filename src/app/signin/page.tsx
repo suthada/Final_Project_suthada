@@ -1,5 +1,4 @@
-// Add the "use client" directive at the top of the file
-"use client";
+"use client"; 
 
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
