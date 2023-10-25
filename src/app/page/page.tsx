@@ -1,7 +1,23 @@
 "use client";
 import React, { useState } from 'react';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+
+
 
 const MyComponent = () => {
+
+  const { data: session } = useSession();
+  const router = useRouter();
+
+  if (!session) {
+    router.push("/signin");
+    return null;
+  }
+
+
+
+
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -63,6 +79,9 @@ const MyComponent = () => {
       [name]: value,
     }));
   };
+
+  
+  
 
   const calculateAppraisalPrice = (area: string, appraisalPrice: string, propertyType: string) => {
     // Convert area and appraisalPrice to numbers
