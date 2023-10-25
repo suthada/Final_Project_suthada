@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
+import "./styles.css";
 
 export default function Page() {
   const router = useRouter();

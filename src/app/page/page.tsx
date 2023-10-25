@@ -176,7 +176,6 @@ const MyComponent = () => {
           value={formData.propertyType}
           onChange={handleSelectChange}
         >
-          <option value=""></option>
           <option value="ประเภทที่อยู่อาศัย">ประเภทที่อยู่อาศัย</option>
           <option value="ประเภทพาณิชยกรรม">ประเภทพาณิชยกรรม</option>
           <option value="ประเภทที่ว่างเปล่า">ประเภทที่ว่างเปล่า</option>

@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { css } from '@emotion/react';
 
 const centerText: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  height: "20vh",
+  height: "60vh",
   textAlign: "center",
 };
 
